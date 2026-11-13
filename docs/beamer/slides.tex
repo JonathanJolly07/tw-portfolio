@@ -1,0 +1,79 @@
+\documentclass{beamer}
+\usetheme{Berlin}
+\usecolortheme{dolphin}
+
+\title[Technical Writing Portfolio]{Technical Communication \& Documentation Workflows}
+\subtitle{A Practical Guide to Modern Engineering Tools}
+\author{Jonathan Jolly}
+\institute[CSE, MNIT Jaipur]{Department of Computer Science \& Engineering \\ Malaviya National Institute of Technology Jaipur}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Presentation Roadmap}
+  \tableofcontents
+\end{frame}
+
+\section{Distributed Version Control}
+\begin{frame}{Git \& GitHub: Tracking and Collaboration}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{block}{Local Git Lifecycle}
+      \begin{itemize}
+        \item \texttt{git init}: Initialize repository
+        \item \texttt{git add}: Stage workspace edits
+        \item \texttt{git commit}: Record snapshots
+      \end{itemize}
+    \end{block}
+
+    \column{0.5\textwidth}
+    \begin{block}{Remote Collaboration}
+      \begin{itemize}
+        \item Branching for isolated features
+        \item Merging \& conflict resolution
+        \item Pull requests \& release tags
+      \end{itemize}
+    \end{block}
+  \end{columns}
+\end{frame}
+
+\section{Scientific Typesetting}
+\begin{frame}{Structured Authoring with \LaTeX{} \& Beamer}
+  \begin{block}{Why Plain-Text Typesetting?}
+    Separating document logic from visual layout ensures consistent formatting across research papers and presentations.
+  \end{block}
+  \vspace{0.2cm}
+  \begin{itemize}
+    \item \textbf{Mathematical Precision:} Native rendering for complex equations such as $\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$.
+    \item \textbf{Automated Indexing:} Dynamic Table of Contents, cross-references, and Bib\TeX{} citations.
+    \item \textbf{Beamer Decks:} Modular frames, themes, and structured visual blocks.
+  \end{itemize}
+\end{frame}
+
+\section{Automated API Documentation}
+\begin{frame}{Source-to-Manual Generation with Doxygen}
+  \begin{itemize}
+    \item Parses annotated C/C++ header and source files into structured HTML and PDF references.
+    \item Eliminates drift between codebase updates and external manuals.
+  \end{itemize}
+  \vspace{0.2cm}
+  \begin{exampleblock}{Standard Javadoc-Style Tags}
+    \texttt{@file} (module overview) \quad $\bullet$ \quad \texttt{@brief} (summary) \\
+    \texttt{@param} (input arguments) \quad $\bullet$ \quad \texttt{@return} (output values)
+  \end{exampleblock}
+\end{frame}
+
+\section{Cloud Documentation}
+\begin{frame}{Collaborative Editing in Google Docs}
+  \begin{itemize}
+    \item \textbf{Semantic Hierarchy:} Utilizing Title, H1, and H2 styles for navigable outlines.
+    \item \textbf{Asynchronous Review:} Suggesting mode, anchored comment threads, and version history.
+    \item \textbf{Archival Exports:} Generating clean, hyperlink-preserving PDF deliverables.
+  \end{itemize}
+\end{frame}
+
+\end{document}
